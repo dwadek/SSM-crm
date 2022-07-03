@@ -10,7 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -35,7 +37,7 @@ public class UserController {
 
     @RequestMapping("/settings/qx/user/login.do")
     @ResponseBody
-    public Object login(String loginAct, String loginPwd, String isRemPwd, HttpServletRequest request, HttpSession session){
+    public Object login(String loginAct, String loginPwd, String isRemPwd, HttpServletRequest request, HttpServletResponse response, HttpSession session){
         //封装参数
         Map<String,Object> map = new HashMap<>();
         map.put("loginAct",loginAct);
@@ -67,9 +69,42 @@ public class UserController {
 
                 //把user保存到session中
                 session.setAttribute(Contants.SESSION_USER,user);
+
+                //如果需要记住密码，则往外写cookie
+                if("true".equals(isRemPwd)){
+                    Cookie c1 = new Cookie("loginAct", user.getLoginAct());
+                    c1.setMaxAge(60*60*24*10);//十天
+                    response.addCookie(c1);
+                    Cookie c2 = new Cookie("loginPwd", user.getLoginPwd());
+                    c2.setMaxAge(60*60*24*10);//十天
+                    response.addCookie(c2);
+                }else {
+                    //把没有过期的cookie删除
+                    Cookie c1 = new Cookie("loginAct" ,"1");
+                    c1.setMaxAge(0);
+                    response.addCookie(c1);
+                    Cookie c2 = new Cookie("loginPwd" ,"1");
+                    c2.setMaxAge(0);
+                    response.addCookie(c2);
+                }
             }
         }
         return returnObject;
+    }
 
+    @RequestMapping("/settings/qx/user/logout.do")
+    public String logout(HttpServletResponse response,HttpSession session){
+        //清空cookie
+        Cookie c1 = new Cookie("loginAct" ,"1");
+        c1.setMaxAge(0);
+        response.addCookie(c1);
+        Cookie c2 = new Cookie("loginPwd" ,"1");
+        c2.setMaxAge(0);
+        response.addCookie(c2);
+
+        //销毁session
+        session.invalidate();
+        //跳转到首页
+        return "redirect:/";
     }
 }
