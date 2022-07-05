@@ -38,7 +38,7 @@
 		});
 
 
-		window.open("main/index.html","workareaFrame");
+		window.open("workbench/main/index.do","workareaFrame");
 
 		//给确定按钮添加事件
 		$("#logoutBtn").click(function () {
