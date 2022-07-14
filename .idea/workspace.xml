@@ -9,7 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d5105a-ba74-4ca9-9af0-fdb1278ebe0a" name="Changes" comment="" />
+    <list default="true" id="97d5105a-ba74-4ca9-9af0-fdb1278ebe0a" name="Changes" comment="2022/7/5">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/commons/utils/UUIDUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/pojo/Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/ActivityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/web/controller/ActivityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/resources/applicationContext_service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/resources/applicationContext_service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/main/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,11 +37,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="XXXMapper" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -62,6 +83,9 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="2B6UNE0KvcYnN5SIAWJiC7pUk0M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="flattenModules" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -71,15 +95,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/crm/src/main/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/pojo" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\JavaEE\CRM(SSM)\crm\src\main\java\com\dwadek\crm\workbench\pojo" />
       <recent name="I:\JavaEE\CRM(SSM)\crm\src\main\resources" />
       <recent name="I:\JavaEE\CRM(SSM)\crm\src\main\webapp\WEB-INF\pages" />
       <recent name="I:\JavaEE\CRM(SSM)\crm\src\main\webapp" />
@@ -88,6 +113,7 @@
   <component name="RunManager">
     <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://127.0.0.1:8080/crm/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="crm:war exploded">
           <settings>
@@ -96,7 +122,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="0f942eb2-ad62-4031-b730-3accaa4855f7" />
+        <option name="BASE_DIRECTORY_NAME" value="9f9972b9-5481-4e9d-8a4f-8a44ed6540e0" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -104,7 +130,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="4634" />
+        <option name="DEBUG_PORT" value="5106" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -189,12 +215,57 @@
       <workItem from="1656589259286" duration="5354000" />
       <workItem from="1656735907519" duration="96000" />
       <workItem from="1656736139876" duration="3411000" />
-      <workItem from="1656739595908" duration="6054000" />
+      <workItem from="1656739595908" duration="6115000" />
+      <workItem from="1656824975910" duration="6409000" />
+      <workItem from="1656860984456" duration="686000" />
+      <workItem from="1656935086595" duration="4104000" />
+      <workItem from="1657022641067" duration="834000" />
+      <workItem from="1657349894221" duration="3215000" />
+      <workItem from="1657420548316" duration="9161000" />
+      <workItem from="1657540296780" duration="984000" />
+      <workItem from="1657541303430" duration="2294000" />
+      <workItem from="1657549314307" duration="223000" />
+      <workItem from="1657627502957" duration="1636000" />
+      <workItem from="1657711796824" duration="1336000" />
+      <workItem from="1657730649460" duration="7000" />
+      <workItem from="1657800995309" duration="2841000" />
+      <workItem from="1657804593658" duration="910000" />
     </task>
+    <task id="LOCAL-00001" summary="2022/7/3">
+      <created>1656861047535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656861047535</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2022/7/5">
+      <created>1657027415048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657027415048</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2022/7/3" />
+    <MESSAGE value="2022/7/5" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022/7/5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
