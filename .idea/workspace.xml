@@ -9,24 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d5105a-ba74-4ca9-9af0-fdb1278ebe0a" name="Changes" comment="2022/7/5">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/commons/utils/UUIDUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/pojo/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/ActivityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/impl/ActivityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/web/controller/ActivityController.java" afterDir="false" />
+    <list default="true" id="97d5105a-ba74-4ca9-9af0-fdb1278ebe0a" name="Changes" comment="2022/7/14">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/settings/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/resources/applicationContext_service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/resources/applicationContext_service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/main/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +214,9 @@
       <workItem from="1657711796824" duration="1336000" />
       <workItem from="1657730649460" duration="7000" />
       <workItem from="1657800995309" duration="2841000" />
-      <workItem from="1657804593658" duration="910000" />
+      <workItem from="1657804593658" duration="1098000" />
+      <workItem from="1658023796242" duration="2205000" />
+      <workItem from="1658147676431" duration="1309000" />
     </task>
     <task id="LOCAL-00001" summary="2022/7/3">
       <created>1656861047535</created>
@@ -245,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657027415048</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2022/7/14">
+      <created>1657805691401</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657805691401</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2022/7/3" />
     <MESSAGE value="2022/7/5" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022/7/5" />
+    <MESSAGE value="2022/7/14" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022/7/14" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
