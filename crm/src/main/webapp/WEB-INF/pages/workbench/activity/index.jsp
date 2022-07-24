@@ -110,6 +110,22 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 		$("#queryActivitybtn").click(function () {
 			queryActivityByConditionForPage();
 		});
+
+		//给全选添加单击事件
+		$("#checkAll").click(function () {
+			//如果全选是选中状态
+			$("#tBody input[type='checkbox']").prop("checked",this.checked);
+		});
+
+		$("#tBody input[type='checkbox']").click(function () {
+			//如果所有的checkbox都选中，则全选也选中
+			if($("#tBody input[type='checkbox']").size()==$("#tBody input[type='checkbox']:checked").size()){
+				$("#checkAll").prop("checked",true);
+			}else {
+				$("#checkAll").prop("checked",false);
+			}
+
+		});
 	});
 
 	function queryActivityByConditionForPage(pageNo,pageSize) {
@@ -384,7 +400,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 				<table class="table table-hover">
 					<thead>
 						<tr style="color: #B3B3B3;">
-							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" id="checkAll" /></td>
 							<td>名称</td>
                             <td>所有者</td>
 							<td>开始日期</td>
@@ -410,7 +426,8 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 				</table>
 			</div>
 
-			<div style="height: 50px; position: relative;top: 30px;">
+			<div id=""></div>
+			<%--<div style="height: 50px; position: relative;top: 30px;">
 				<div>
 					<button type="button" class="btn btn-default" style="cursor: default;">共<b id="totalRowsB">50</b>条记录</button>
 				</div>
@@ -443,7 +460,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 						</ul>
 					</nav>
 				</div>
-			</div>
+			</div>--%>
 
 		</div>
 
