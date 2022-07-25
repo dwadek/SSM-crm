@@ -124,7 +124,40 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 			}else {
 				$("#checkAll").prop("checked",false);
 			}
+		});
 
+		//给删除按钮绑定事件
+		$("#deleteActivityBtn").click(function () {
+			//收集参数
+			//获取列表中所有被选中的checkbox
+			var checkedIds = $("#tBody input[type='checkbox']:checked");
+			if(checkedIds.size()==0){
+				alert("请选择要删除的市场活动");
+				return;
+			}
+
+			if(window.confirm("确定删除吗？")){
+				var ids = "";
+				$.each(checkedIds,function (index,obj){
+					ids += "id=" + this.value + "&";
+				});
+				ids = ids.substr(0,ids.length-1);
+				//发送请求
+				$.ajax({
+					url:'/workbench/activity/deleteActivityByIds.do',
+					data:ids,
+					type:'post',
+					dataType:'json',
+					success:function (data) {
+						if(data.code == "1"){
+							queryActivityByConditionForPage(1,$("#demo_page1").bs_pagination('getOption','rowsPerPage'));
+						}else{
+							//提示信息
+							alert(data.message);
+						}
+					}
+				});
+			}
 		});
 	});
 
@@ -388,7 +421,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 				<div class="btn-group" style="position: relative; top: 18%;">
 				  <button type="button" class="btn btn-primary" id="createActivityBtn"><span class="glyphicon glyphicon-plus"></span> 创建</button>
 				  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#editActivityModal"><span class="glyphicon glyphicon-pencil"></span> 修改</button>
-				  <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-minus"></span> 删除</button>
+				  <button type="button" class="btn btn-danger" id="deleteActivityBtn"><span class="glyphicon glyphicon-minus"></span> 删除</button>
 				</div>
 				<div class="btn-group" style="position: relative; top: 18%;">
                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#importActivityModal" ><span class="glyphicon glyphicon-import"></span> 上传列表数据（导入）</button>
