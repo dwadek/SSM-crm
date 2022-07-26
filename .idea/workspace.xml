@@ -9,8 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d5105a-ba74-4ca9-9af0-fdb1278ebe0a" name="Changes" comment="2022/7/24">
+    <list default="true" id="97d5105a-ba74-4ca9-9af0-fdb1278ebe0a" name="Changes" comment="2022/7/25">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/mapper/ActivityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/ActivityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/service/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/web/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/web/controller/ActivityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +85,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/crm/src/main/java/com/dwadek/crm/workbench/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../workspaceForCrm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -219,7 +224,8 @@
       <workItem from="1658147676431" duration="1928000" />
       <workItem from="1658230209450" duration="1281000" />
       <workItem from="1658627895801" duration="2561000" />
-      <workItem from="1658751629958" duration="2692000" />
+      <workItem from="1658751629958" duration="3428000" />
+      <workItem from="1658835881429" duration="4476000" />
     </task>
     <task id="LOCAL-00001" summary="2022/7/3">
       <created>1656861047535</created>
@@ -256,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658632241466</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2022/7/25">
+      <created>1658754928259</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658754928259</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +293,8 @@
     <MESSAGE value="2022/7/18" />
     <MESSAGE value="2022/7/19" />
     <MESSAGE value="2022/7/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022/7/24" />
+    <MESSAGE value="2022/7/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022/7/25" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -84,4 +84,38 @@ public class ActivityController {
         }
         return returnObject;
     }
+
+    @RequestMapping("/workbench/activity/queryActivityById.do")
+    @ResponseBody
+    public Object queryActivityById(String id){
+        //调用service查询市场活动
+        Activity activity = activityService.queryActivityById(id);
+        return activity;
+    }
+
+    @RequestMapping("/workbench/activity/saveEditActivity.do")
+    @ResponseBody
+    public Object saveEditActivity(Activity activity,HttpSession session){
+        User user = (User) session.getAttribute(Contants.SESSION_USER);
+        //封装参数
+        activity.setEditTime(DateUtils.formatDateTime(new Date()));
+        activity.setEditBy(user.getId());
+
+        ReturnObject returnObject = new ReturnObject();
+        try {
+            //调用service层方法，保存修改的市场活动
+            int ret = activityService.saveActivity(activity);
+            if(ret>0){
+                returnObject.setCode(Contants.RETURN_OBJECT_CODE_SUCCESS);
+            }else {
+                returnObject.setCode(Contants.RETURN_OBJECT_CODE_FAILURE);
+                returnObject.setMessage("系统忙，请稍后。。。");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+            returnObject.setCode(Contants.RETURN_OBJECT_CODE_FAILURE);
+            returnObject.setMessage("系统忙，请稍后。。。");
+        }
+        return returnObject;
+    }
 }
